@@ -1,0 +1,20 @@
+wiener2 <- function(series,f,w,o,l,x=0,c=1){
+	args <- list(x=x,c=c,V=0)
+	if(!missing(f))
+		args <- c(args, f=f)
+	if(!missing(w))
+		args <- c(args, w=w)
+	if(missing(o))
+		stop("option 'o' is mandatory")
+	if(!missing(l))
+		args <- c(args, l=l)
+	opts <-.listToOpts(args)
+
+	.serialize(series, tin <- .getTempFName())
+	.serialize(o, topts <- .getTempFName())
+	opts <- paste(tin, " ", opts, " -o", topts, " -O", tout <- .getTempFName())
+	callNativeTISEAN("wiener2", opts=opts)
+	out <- as.matrix(TISEANoutput(tout))
+	file.remove(tin,topts,tout)
+	return(out)
+}
