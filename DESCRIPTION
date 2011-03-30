@@ -1,6 +1,6 @@
 Package: RTisean
-Date: 04/12/2009
-Version: 3.0.11
+Date: 30/03/2011
+Version: 3.0.12
 Title: R interface to Tisean algorithms
 Author: TISEAN authors: Rainer Hegger, Holger Kantz, Thomas Schreiber.
         R interface code by Antonio, Fabio Di Narzo, R documentation
@@ -24,6 +24,6 @@ Description: Algorithms for time series analysis from nonlinear
 License: GPL-2
 URL: http://tsnonlinear.uniud.it,
         http://www.mpipks-dresden.mpg.de/~tisean
-Packaged: 2009-12-04 08:28:57 UTC; antonio
+Packaged: 2011-03-30 08:35:59 UTC; ubuntu
 Repository: CRAN
-Date/Publication: 2009-12-06 09:22:07
+Date/Publication: 2011-03-30 13:10:59
