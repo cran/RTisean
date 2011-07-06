@@ -1,3 +1,7 @@
+3.0-13  7 jun 2011
+	- fix arg 'm' handling in lfo.run (spotted by Barry M. Trager)
+
+
 3.0-12  30 mar 2011
 	- avoid spurious call to 'file.remove' when no temp input file has been created
 	(spotted by Βασίλειος Σιάκουλης)
