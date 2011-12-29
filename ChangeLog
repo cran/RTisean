@@ -1,3 +1,7 @@
+3.0-14  29 dec 2011
+	- comply with CRAN policies: ask before writing in the user's HOME folder
+	- comply with latest package startup messages guidelines
+
 3.0-13  7 jun 2011
 	- fix arg 'm' handling in lfo.run (spotted by Barry M. Trager)
 
